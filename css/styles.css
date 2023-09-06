@@ -37,6 +37,8 @@ h6 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -84,7 +86,33 @@ button {
 }
 
 /* Header */
+.header {
+  padding-bottom: 8px;
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 24px;
+}
+
+.header-socials {
+  display: flex;
+  gap: 18px;
+}
+
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 4px;
   color: var(--c-primary);
   font-size: 18px;
   font-weight: 700;
@@ -97,7 +125,16 @@ button {
   font-style: italic;
 }
 
+.nav-list {
+  display: flex;
+  gap: 24px;
+  flex-grow: 1;
+  justify-content: center;
+}
+
 .nav-link {
+  display: inline-block;
+  padding: 24px 0;
   color: var(--c-primary);
   font-weight: 500;
   line-height: 1.14;
@@ -111,8 +148,13 @@ button {
 
 /* Hero section */
 .hero-section {
-  padding: 380px 0 40px;
+  padding-bottom: 72px;
+}
+
+.hero-inner {
+  padding: 380px 40px 40px;
   background-color: var(--c-background); /* TODO: replace with image */
+  border-radius: 30px;
 }
 
 .hero-title {
@@ -123,6 +165,12 @@ button {
   line-height: 1.21;
   letter-spacing: -0.03em;
   margin-bottom: 32px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
 
 .hero-button {
@@ -139,6 +187,10 @@ button {
 }
 
 .hero-scroll-down {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-left: auto;
   color: var(--c-primary-light);
   font-weight: 500;
   line-height: 1.28;
@@ -154,6 +206,16 @@ button {
 .advantage-section {
   padding: 50px 0;
   background-color: var(--c-background);
+}
+
+.advantage-list {
+  display: flex;
+  gap: 70px;
+}
+
+.advantage-item:not(:last-child) {
+  padding-right: 18px;
+  border-right: 1px solid var(--c-primary-light-tr);
 }
 
 .advantage-icon {
@@ -179,3 +241,58 @@ button {
   letter-spacing: -0.02em;
 }
 /* END Advantages section */
+
+/* Ingridients sections */
+.ingridients-title {
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.ingridients-subtitle {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ingridients-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.ingridients-item {
+  flex-basis: calc((100% - 60px) / 4);
+}
+
+.ingridient {
+  border: 1px solid var(--c-brand);
+  border-radius: 15px;
+  padding: 28px;
+}
+/* END Ingridients sections */
+
+/* Video section */
+.video-inner {
+  display: flex;
+  gap: 20px;
+}
+
+.video-media {
+  flex-basis: calc((100% - 20px) / 2);
+}
+
+.video-background {
+  border-radius: 15px;
+  object-fit: cover;
+  height: 100%;
+}
+
+.video-play {
+  /* TODO: center play button in video */
+  display: none;
+}
+
+.video-content {
+  padding: 32px;
+  flex-basis: calc((100% - 20px) / 2);
+}
+/* END Video section */
