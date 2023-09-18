@@ -370,19 +370,79 @@
     </main>
     <footer></footer>
 
+    <!-- Modal -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-close" type="button" data-modal-close>X</button>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-          corporis totam fugiat voluptas placeat ab maiores tenetur dicta
-          nostrum vitae?
-        </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates
-          corporis totam fugiat voluptas placeat ab maiores tenetur dicta
-          nostrum vitae?
-        </p>
+        <h2>Buy now</h2>
+        <form name="contact-form">
+          <fieldset>
+            <legend>Personal information</legend>
+            <div>
+              <label class="visually-hidden" for="user-name">Name</label>
+              <input
+                id="user-name"
+                type="text"
+                name="user-name"
+                placeholder="Name"
+              />
+            </div>
+
+            <div>
+              <label class="visually-hidden" for="user-surname">Surname</label>
+              <input
+                id="user-surname"
+                type="text"
+                name="user-surname"
+                placeholder="Surname"
+              />
+            </div>
+
+            <div>
+              <label for="user-email">Email</label>
+              <input
+                id="user-email"
+                type="email"
+                name="user-email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div>
+              <label for="user-tel">Phone number</label>
+              <input
+                id="user-tel"
+                type="tel"
+                name="user-tel"
+                placeholder="Phone number"
+              />
+            </div>
+
+            <div>
+              <label for="user-card-number">Card number</label>
+              <input
+                id="user-card-number"
+                type="number"
+                name="user-card-number"
+                placeholder="Enter card"
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend class="visually-hidden">Additional information</legend>
+            <div>
+              <label for="user-comment">Comment</label>
+              <textarea
+                id="user-comment"
+                name="user-comment"
+                placeholder="Enter text"
+              ></textarea>
+            </div>
+          </fieldset>
+
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </div>
 
